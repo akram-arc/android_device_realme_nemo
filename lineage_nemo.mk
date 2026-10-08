@@ -15,6 +15,9 @@ $(call inherit-product, device/realme/nemo/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit gms
+$(call inherit-product-if-exists, vendor/gms/common/common-vendor.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_nemo
 PRODUCT_BRAND := realme
