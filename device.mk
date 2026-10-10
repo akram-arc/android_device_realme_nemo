@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek
 
+# Bypass Lock State for Kaeru
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
