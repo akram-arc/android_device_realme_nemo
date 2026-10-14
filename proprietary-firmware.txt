@@ -16,4 +16,4 @@ sspm.img
 tee.img
 
 # Patched lk by @antagonizzzt
-lk.img|5c8952674ab8ae8eed5140ea05718d0de6c0dfeb
+lk.img|61de5d94b0140561269e05f5c1c06e3e0a001f06

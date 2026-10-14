@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Bypass Lock State for Kaeru patched LK
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.nemo
