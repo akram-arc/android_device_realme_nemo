@@ -18,7 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/realme/nemo',
+    'device/realme/RM6785',
     'hardware/mediatek',
     'hardware/mediatek/libaedv',
     'hardware/mediatek/libmtkperf_client',
@@ -79,7 +79,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'nemo',
+    'RM6785',
     'realme',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

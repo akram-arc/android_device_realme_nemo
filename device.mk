@@ -5,7 +5,7 @@
 #
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/nemo/nemo-vendor.mk)
+$(call inherit-product, vendor/realme/RM6785/RM6785-vendor.mk)
 
 # Camera
 $(call inherit-product-if-exists, vendor/oppo/camera/oppocamera.mk)
@@ -68,7 +68,7 @@ $(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.nemo
+    android.hardware.biometrics.fingerprint@2.1-service.RM6785
 
 # FM Radio
 PRODUCT_PACKAGES += \
@@ -100,14 +100,14 @@ PRODUCT_PACKAGES += \
     init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init.nemo.rc \
+    init.RM6785.rc \
     ueventd.mtk.rc \
-    ueventd.nemo.rc
+    ueventd.RM6785.rc
 
 PRODUCT_PACKAGES += \
-    init_nemo_vendor
+    init_RM6785_vendor
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_nemo)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_RM6785)
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -161,7 +161,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    SettingsOverlayNemo \
+    SettingsOverlayRM6785 \
     SettingsProviderOverlay6 \
     SettingsProviderOverlay6i \
     SettingsProviderOverlay6s \
@@ -295,7 +295,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.nemo
+    vendor.lineage.touch-service.RM6785
 
 # Update
 AB_OTA_UPDATER := false
@@ -318,8 +318,8 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlayNemo \
-    WifiOverlayNemo \
+    TetheringConfigOverlayRM6785 \
+    WifiOverlayRM6785 \
     hostapd \
     wlan_assistant \
     wpa_supplicant \
