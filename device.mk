@@ -162,10 +162,15 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     SettingsOverlayRM6785 \
+    FrameworksOverlayRMX2151 \
+    FrameworksOverlayRMX2161 \
     SettingsProviderOverlay6 \
     SettingsProviderOverlay6i \
     SettingsProviderOverlay6s \
-    SettingsProviderOverlayNarzo
+    SettingsProviderOverlay7 \
+    SettingsProviderOverlayNarzo \
+    SettingsProviderOverlayNarzo20Pro \
+    SettingsProviderOverlayNarzo30
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS += *
